@@ -1,0 +1,21 @@
+{% load static %}
+<link href="{% static 'css/base.css' %}" rel="stylesheet">
+
+<html>
+  <body>
+    <header>
+       <h1><a href="{% url 'home' %}">To-Do List</a></h1>
+    </header>
+    <div class="new-item">
+        <a href="{% url 'post_new' %}">Add</a>
+
+    </div>
+  <div>
+     {% block content %}
+     {% endblock content %}
+  </div>
+ </body>
+</html>
+
+
+
