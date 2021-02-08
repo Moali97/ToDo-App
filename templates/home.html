@@ -2,16 +2,18 @@
 
 {% block content %}
 
-   <div class="new-item">
+   <div class="navigation">
      <nav>
-        <p><a href="{% url 'post_new' %}">Add</a></p>
+        <a href="{% url 'post_new' %}">Add</a>
+
      </nav>
    </div>
 
  <div class="content">
     <ul>
        {% for list in all_posts_list %}
-    <li>{{ list.title }}</li>
+
+   <li><a href="{% url 'post_detail' list.id %}">{{ list.title }}</a></li>
        {% endfor %}
        {% endblock content %}
     </ul>

@@ -1,6 +1,5 @@
-from django.http import request
 from django.urls import reverse
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from .models import List
 from django.views.generic.edit import CreateView
 
@@ -19,3 +18,7 @@ class TodoCreateView(CreateView):
     def get_success_url(self):
         return reverse('home')
 
+
+class TodoDetailView(DetailView):
+    model = List
+    template_name = 'post_detail.html'
