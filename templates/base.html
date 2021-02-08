@@ -6,10 +6,13 @@
     <header>
        <h1><a href="{% url 'home' %}">To-Do List</a></h1>
     </header>
+
+   <nav>
     <div class="new-item">
         <a href="{% url 'post_new' %}">Add</a>
-
     </div>
+   </nav>
+
   <div>
      {% block content %}
      {% endblock content %}
