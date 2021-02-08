@@ -2,6 +2,12 @@
 
 {% block content %}
 
+   <div class="new-item">
+     <nav>
+        <p><a href="{% url 'post_new' %}">Add</a></p>
+     </nav>
+   </div>
+
  <div class="content">
     <ul>
        {% for list in all_posts_list %}
@@ -10,4 +16,5 @@
        {% endblock content %}
     </ul>
  </div>>
+
 
