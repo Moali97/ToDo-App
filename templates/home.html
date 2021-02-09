@@ -5,7 +5,6 @@
    <div class="navigation">
      <nav>
         <a href="{% url 'post_new' %}">Add</a>
-
      </nav>
    </div>
 
@@ -13,7 +12,9 @@
     <ul>
        {% for list in all_posts_list %}
 
-   <li><a href="{% url 'post_detail' list.id %}">{{ list.title }}</a></li>
+       <li><a href="{% url 'post_detail' list.id %}">{{ list.title }}</a></li>
+       <a href="{% url 'delete' list.id %}">Delete Post</a>
+
        {% endfor %}
        {% endblock content %}
     </ul>

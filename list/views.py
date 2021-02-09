@@ -1,7 +1,7 @@
 from django.urls import reverse
 from django.views.generic import ListView, DetailView
 from .models import List
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, DeleteView
 
 
 class HomePageView(ListView):
@@ -22,3 +22,11 @@ class TodoCreateView(CreateView):
 class TodoDetailView(DetailView):
     model = List
     template_name = 'post_detail.html'
+
+
+class TodoDeleteView(DeleteView):
+    model = List
+    template_name = 'delete.html'
+
+    def get_success_url(self):
+        return reverse('home')
