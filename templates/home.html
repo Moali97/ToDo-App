@@ -10,14 +10,18 @@
 
  <div class="content">
     <ul>
-       {% for list in all_posts_list %}
 
-       <li><a href="{% url 'post_detail' list.id %}">{{ list.title }}</a></li>
-       <a href="{% url 'delete' list.id %}">Delete Post</a>
+       {% for list in all_posts_list %}
+    <div class="delete">
+       <a href="{% url 'delete' list.id %}">Delete Post</a><br>
+    </div>
+
+     <li><a href="{% url 'post_detail' list.id %}">{{ list.title }}</a></li>
+
 
        {% endfor %}
        {% endblock content %}
     </ul>
- </div>>
+
 
 
