@@ -24,7 +24,7 @@ class TodoDetailView(DetailView):
     template_name = 'post_detail.html'
 
 
-class TodoDeleteView(DeleteView):
+class TodoDeleteView(DeleteView): # new
     model = List
     template_name = 'delete.html'
-
+    success_url = reverse_lazy('home')
