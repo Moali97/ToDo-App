@@ -12,7 +12,7 @@
  {% for list in all_posts_list %}
 
  <div class="content">
-     <a href="{% url 'post_detail' list.id %}">{{ list.title }}</a>
+     {{ list.title }}
  </div>
 
  <div class="delete">

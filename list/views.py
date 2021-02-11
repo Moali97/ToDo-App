@@ -1,4 +1,4 @@
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.views.generic import ListView, DetailView
 from .models import List
 from django.views.generic.edit import CreateView, DeleteView
@@ -28,5 +28,3 @@ class TodoDeleteView(DeleteView):
     model = List
     template_name = 'delete.html'
 
-    def get_success_url(self):
-        return reverse('home')
