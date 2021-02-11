@@ -1,25 +1,41 @@
+body{
+ background: #FAEBD7 ;
+}
+
 header{
- background: #000000;
+ background: #5F9EA0;
  height:95px;
  font-size: 15px;
  text-align: center;
 }
 
 .navigation{
-  background-color: yellow;
   list-style-type: none;
-  text-align: center;
+  text-align: left;
   padding: 0;
   margin: 0;
+  font-size: 25px;
+
+
 }
 
 .post-form{
   font-family: sans-serif;
-  margin: 10px auto 5px;
-  width: 10px;
+  margin: 25px auto 5px;
+  width: 200px;
   border:none;
+  text-align: center;
 }
 
+.post-button {
+  margin: 15;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
 .content{
   background-color: lightgrey;
   width: 300px;
@@ -40,21 +56,4 @@ header{
 }
 
 
-.post-button {
-  margin: 15;
-  border: none;
-  border-radius: 0;
-  width: 75%;
-  padding: 10px;
-  float: left;
-  font-size: 16px;
-}
 
- /*
- list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align:center;
-  background:red;
-
- /*

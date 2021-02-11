@@ -2,11 +2,11 @@
 
 {% block content %}
 
-   <div class="navigation">
+   <span class="navigation">
      <nav>
-        <a href="{% url 'post_new' %}">Add</a>
+        <a href="{% url 'post_new' %}">Add To List</a>
      </nav>
-   </div>
+   </span>
 
 
  {% for list in all_posts_list %}
