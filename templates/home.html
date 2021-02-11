@@ -8,20 +8,22 @@
      </nav>
    </div>
 
+
+ {% for list in all_posts_list %}
+
  <div class="content">
-    <ul>
+     <a href="{% url 'post_detail' list.id %}">{{ list.title }}</a>
+ </div>
 
-       {% for list in all_posts_list %}
-    <div class="delete">
-       <a href="{% url 'delete' list.id %}">Delete Post</a><br>
-    </div>
+ <div class="delete">
+   <a href="{% url 'delete' list.id %}">Delete Post</a><br>
+ </div>
 
-     <li><a href="{% url 'post_detail' list.id %}">{{ list.title }}</a></li>
+ {% endfor %}
+ {% endblock content %}
 
 
-       {% endfor %}
-       {% endblock content %}
-    </ul>
+
 
 
 
