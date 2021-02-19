@@ -3,7 +3,7 @@ from django.urls import reverse
 
 
 class List(models.Model):
-    title = models.CharField(max_length=50, default='')
+    title = models.CharField(max_length=250, default='')
 
     def __str__(self):
-        return self.title[:50]
+        return self.title[:250]
