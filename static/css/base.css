@@ -44,6 +44,7 @@ header{
   margin: auto;
   text-align: left;
   height:20px;
+  overflow: hidden;
 }
 
 
