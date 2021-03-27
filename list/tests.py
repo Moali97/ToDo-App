@@ -4,13 +4,10 @@ from list.models import List
 
 # Create your tests here.
 
-class ListTestCase(TestCase):
+class URLTests(TestCase):
+    def test_testhomepage(self):
+        response = self.client.get('/')
+        self.assertEqual(response.status_code, 200)
 
-    def setUp(self):
-        List.objects.create(text='just a test')
 
-    def test_text_content(self):
-        list = List.objects.get(id=1)
-        expected_object_name = f'{list.text}'
-        self.assertEqual(expected_object_name, 'just a test')
 
