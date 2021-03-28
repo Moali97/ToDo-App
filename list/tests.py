@@ -1,13 +1,10 @@
-from django.test import TestCase
+import unittest
 from list.models import List
 
 
-# Create your tests here.
+Class TestList(unittest.TestCase):
 
-class URLTests(TestCase):
-    def test_testhomepage(self):
-        response = self.client.get('/')
-        self.assertEqual(response.status_code, 200)
+
 
 
 
