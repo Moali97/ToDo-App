@@ -13,7 +13,11 @@
 
  <div class="content">
      {{ list.title }}
+     <p>Date created</p>{{list.date_created}}
  </div>
+
+
+
 
  <div class="delete">
    <a href="{% url 'delete' list.id %}">Delete Post</a><br>
