@@ -6,4 +6,4 @@ class List(models.Model):
     date_created = models.DateField(auto_now_add=True, null=True, blank=True)
 
     def __str__(self):
-        return self.title[:250]
+        return self.title[:25]

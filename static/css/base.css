@@ -46,7 +46,10 @@ header{
   height:20px;
   overflow: hidden;
 }
-
+.content p{
+  float:right;
+  text-align: left;
+}
 
 .delete{
   margin: 0;
