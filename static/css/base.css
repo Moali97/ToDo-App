@@ -47,17 +47,19 @@ header{
   overflow: hidden;
 }
 .content p{
-  float:right;
-  text-align: left;
+
 }
 
-.delete{
+.delete {
   margin: 0;
   padding: 0;
   color: red;
   text-align:center;
-
 }
+.delete a{
+ color: red;
+}
+
 
 
 

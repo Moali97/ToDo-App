@@ -2,7 +2,7 @@
 
 {% block content %}
 
-   <span class="navigation">
+   <span class="navigation" xmlns="http://www.w3.org/1999/html">
      <nav>
         <a href="{% url 'post_new' %}">Add To List</a>
      </nav>
@@ -12,8 +12,8 @@
  {% for list in all_posts_list %}
 
  <div class="content">
-     {{ list.title }}
-     <br> <font size="2"> {{list.date_created}}</font>
+     {{ list.title }}"
+     <font size="2">{{list.date_created}}</font>
  </div>
 
 
@@ -21,7 +21,7 @@
 
 
  <div class="delete">
-   <a href="{% url 'delete' list.id %}">Delete Post</a><br>
+  <a href="{% url 'delete' list.id %}">Delete Post</a><br>
  </div>
 
  {% endfor %}

@@ -1,18 +1,19 @@
-{% load static %}
-<link href="{% static 'css/base.css' %}" rel="stylesheet">
+     {% load static %}
+     <link href="{% static 'css/base.css' %}" rel="stylesheet">
 
-<html>
-  <body>
-    <header>
-       <h1><a href="{% url 'home' %}">To-Do List</a></h1>
-    </header>
 
-  <div>
-     {% block content %}
-     {% endblock content %}
-  </div>
- </body>
-</html>
+    <html>
+      <body>
+        <header>
+           <h1><a href="{% url 'home' %}">To-Do List</a></h1>
+        </header>
+
+      <div>
+         {% block content %}
+         {% endblock content %}
+      </div>
+     </body>
+    </html>
 
 
 
