@@ -14,18 +14,14 @@
 
  {% for list in all_posts_list %}
 
- <div class="content">
-     {{ list.title }}
-     <font size="2">{{list.date_created}}</font>
- </div>
-
-
-
+  <div class="content">
+      <a href="{% url 'post_detail' list.pk %}">{{ list.title }}</a>
+      <font size="2">{{list.date_created}}</font>
+  </div>
 
 
  <div class="delete">
   <a href="{% url 'delete' list.id %}">Delete Post</a><br>
-  <a href="{% url 'post_detail' list.id %}">Edit post</a>
  </div>
 
  {% endfor %}

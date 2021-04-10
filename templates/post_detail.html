@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h3><a href="{% url 'post_detail' list.id %}">Edit post</a><h3/>
+    <div class="view-post">
+        <h2>{{list.title}}</h2>
+    </div>
+
+
 
 {% endblock content %}

@@ -24,6 +24,7 @@ class TodoDetailView(DetailView):
     template_name = 'post_detail.html'
 
 
+
 class TodoDeleteView(DeleteView):
     model = List
     template_name = 'delete.html'
