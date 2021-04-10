@@ -4,9 +4,12 @@
 
    <span class="navigation" xmlns="http://www.w3.org/1999/html">
      <nav>
-        <a href="{% url 'post_new' %}">Add To List</a>
+        <!--<a href="{% url 'post_new' %}">Add Item To List</a>-->
+       <!--  <a href="{% url 'post_new' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Add Item to List</a>-->
+         <a href="{% url 'post_new' %}" button type="button" class="btn btn-primary">Add Item to List</button></a>
      </nav>
    </span>
+
 
 
  {% for list in all_posts_list %}
@@ -22,6 +25,7 @@
 
  <div class="delete">
   <a href="{% url 'delete' list.id %}">Delete Post</a><br>
+  <a href="{% url 'post_detail' list.id %}">Edit post</a>
  </div>
 
  {% endfor %}
