@@ -9,6 +9,10 @@ class HomePageView(ListView):
     context_object_name = 'all_posts_list'
     template_name = 'home.html'
 
+class TodoDetailView(DetailView):
+    model = List
+    template_name = 'post_detail.html'
+
 
 class TodoCreateView(CreateView):
     model = List
@@ -17,12 +21,6 @@ class TodoCreateView(CreateView):
 
     def get_success_url(self):
         return reverse('home')
-
-
-class TodoDetailView(DetailView):
-    model = List
-    template_name = 'post_detail.html'
-
 
 
 class TodoDeleteView(DeleteView):
