@@ -36,14 +36,11 @@ header{
   float: left;
   font-size: 16px;
 }
-.content{
+.card{
   background-color: lightgrey;
-  width: 300px;
-  border: 5px solid green;
-  padding: 20px;
   margin: auto;
   text-align: left;
-  height:20px;
+
   overflow: hidden;
 }
 .content p{
