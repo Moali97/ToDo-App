@@ -40,11 +40,7 @@ header{
   background-color: lightgrey;
   margin: auto;
   text-align: left;
-
   overflow: hidden;
-}
-.content p{
-
 }
 
 .delete {
