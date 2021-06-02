@@ -10,12 +10,19 @@
            <h1><a href="{% url 'home' %}">To-Do List</a></h1>
         </header>
 
-      <div>
+        <div class="nav-right">
+            <a href="https://github.com/Moali97/ToDo-App" target="_blank" button type="button" class="btn btn-primary" >Github Code</a>
+          <!-- <a class="nav-link" href="https://github.com/Moali97/ToDo-App" target="_blank">GitHub</a> -->
+        </div>
+
+        <div>
+
          {% block content %}
          {% endblock content %}
-      </div>
-     </body>
-    </html>
+
+        </div>
+      </body>
+   </html>
 
 
 
