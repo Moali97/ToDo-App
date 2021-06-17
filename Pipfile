@@ -9,7 +9,6 @@ gunicorn = "*"
 whitenoise = "==5.2.0"
 python-decouple = "*"
 psycopg2 = "*"
-dj-database-url = "*"
 
 [dev-packages]
 
